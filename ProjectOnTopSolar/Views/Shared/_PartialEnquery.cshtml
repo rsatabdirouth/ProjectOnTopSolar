@@ -1,4 +1,4 @@
-﻿@model ProjectOnTopSolar.ViewModels.SecondIndexViewModel
+﻿@model ProjectOnTopSolar.ViewModels.EnquieryViewModel
 
 @{  var titleItems = new List<SelectListItem>
     {
@@ -13,43 +13,43 @@
 {
     <div class="row">
         <div class="col-md-4">
-            @Html.LabelFor(m => m.EnquieryViewModel.Title)
-            @Html.DropDownListFor(m => m.EnquieryViewModel.Title, ViewBag.TitleItems as List<SelectListItem>, new { @class = "form-control", @style = "padding:5px 1px;" })
+            @Html.LabelFor(m => m.Title)
+            @Html.DropDownListFor(m => m.Title, ViewBag.TitleItems as List<SelectListItem>, new { @class = "form-control", @style = "padding:5px 1px;" })
         </div>
         <div class="col-md-4">
-            @Html.LabelFor(m => m.EnquieryViewModel.FirstName)
-            @Html.TextBoxFor(m => m.EnquieryViewModel.FirstName, new { @class = "form-control" })
+            @Html.LabelFor(m => m.FirstName)
+            @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control" })
 
         </div>
         <div class="col-md-4">
-            @Html.LabelFor(m => m.EnquieryViewModel.LastName)
-            @Html.TextBoxFor(m => m.EnquieryViewModel.LastName, new { @class = "form-control" })
+            @Html.LabelFor(m => m.LastName)
+            @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })
 
         </div>
 
 
         <div class="col-md-4">
-            @Html.LabelFor(m => m.EnquieryViewModel.Address)
-            @Html.TextBoxFor(m => m.EnquieryViewModel.Address, new { @class = "form-control" })
+            @Html.LabelFor(m => m.Address)
+            @Html.TextBoxFor(m => m.Address, new { @class = "form-control" })
         </div>
         <div class="col-md-4">
-            @Html.LabelFor(m => m.EnquieryViewModel.City)
-            @Html.TextBoxFor(m => m.EnquieryViewModel.City, new { @class="form-control"})
+            @Html.LabelFor(m => m.City)
+            @Html.TextBoxFor(m => m.City, new { @class="form-control"})
         </div>
         <div class="col-md-4">
-            @Html.LabelFor(m => m.EnquieryViewModel.HomePhone)
-            @Html.TextBoxFor(m => m.EnquieryViewModel.HomePhone, new { @class = "form-control" })
+            @Html.LabelFor(m => m.HomePhone)
+            @Html.TextBoxFor(m => m.HomePhone, new { @class = "form-control" })
         </div>
 
 
         <div class="col-xs-12 col-md-4 col-lg-4">
-            @Html.LabelFor(m => m.EnquieryViewModel.WorkPhone)
-            @Html.TextBoxFor(m => m.EnquieryViewModel.WorkPhone, new { @class = "form-control" })
+            @Html.LabelFor(m => m.WorkPhone)
+            @Html.TextBoxFor(m => m.WorkPhone, new { @class = "form-control" })
         </div>
        
          <div class="col-xs-12 col-md-4 col-lg-4">
-            @Html.LabelFor(m => m.EnquieryViewModel.Email)
-            @Html.TextBoxFor(m => m.EnquieryViewModel.Email, new { @class = "form-control" })
+            @Html.LabelFor(m => m.Email)
+            @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
         </div>
     </div>
     <div class="row">

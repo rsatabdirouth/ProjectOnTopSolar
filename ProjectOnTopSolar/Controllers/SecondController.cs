@@ -18,22 +18,19 @@ namespace ProjectOnTopSolar.Controllers
             SecondIndexViewModel model = new SecondIndexViewModel();
             return View(model);
         }
-        [HttpGet]
-        public ActionResult SecondIndex(SecondIndexViewModel model)
+        [HttpPost]
+        public ActionResult SecondIndex(EnquieryViewModel model)
         {
             Merger merger = new Merger
             {
-                Address = model.EnquieryViewModel.Address,
-                HomeOwner = model.PropertyViewModel.HomeOwner,
-                Title = model.EnquieryViewModel.Title,
-                FirstName = model.EnquieryViewModel.FirstName,
-                LastName = model.EnquieryViewModel.LastName,
-                City = model.EnquieryViewModel.City,
-                HomePhone = model.EnquieryViewModel.HomePhone,
-                WorkPhone = model.EnquieryViewModel.WorkPhone,
-                Email = model.EnquieryViewModel.Email,
-                PropertyType = model.PropertyViewModel.PropertyType,
-                YourPostCode = model.PropertyViewModel.YourPostCode
+                Address = model.Address,               
+                Title = model.Title,
+                FirstName = model.FirstName,
+                LastName = model.LastName,
+                City = model.City,
+                HomePhone = model.HomePhone,
+                WorkPhone = model.WorkPhone,
+                Email = model.Email               
              };
 
                 _db.Mergers.Add(merger);

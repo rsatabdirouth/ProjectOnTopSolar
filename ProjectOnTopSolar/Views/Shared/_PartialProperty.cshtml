@@ -1,4 +1,4 @@
-﻿@model ProjectOnTopSolar.ViewModels.SecondIndexViewModel
+﻿@model ProjectOnTopSolar.ViewModels.PropertyViewModel
 
 @{
 
@@ -36,29 +36,29 @@
 
         <div class="form-group">
             <div class="col-xs-12 col-md-5 col-lg-5">
-                @Html.LabelFor(m => m.PropertyViewModel.PropertyType)
+                @Html.LabelFor(m => m.PropertyType)
                 </div>
             <div class="col-xs-12 col-md-7 col-lg-7">
-                @Html.DropDownListFor(m => m.PropertyViewModel.PropertyType, ViewBag.Property as List<SelectListItem>, new { @class = "form-control" })
+                @Html.DropDownListFor(m => m.PropertyType, ViewBag.Property as List<SelectListItem>, new { @class = "form-control" })
 
             </div>
             <div class="clearfix"></div>
         </div>
         <div class="form-group">
             <div class="col-xs-12 col-md-5 col-lg-5">
-                @Html.LabelFor(m => m.PropertyViewModel.HomeOwner)
+                @Html.LabelFor(m => m.HomeOwner)
             </div>
             <div class="col-xs-12 col-md-7 col-lg-7">
-                @Html.DropDownListFor(m => m.PropertyViewModel.HomeOwner, ViewBag.ownership as List<SelectListItem>, new { @class = "form-control" })
+                @Html.DropDownListFor(m => m.HomeOwner, ViewBag.ownership as List<SelectListItem>, new { @class = "form-control" })
             </div>
             <div class="clearfix"></div>
         </div>
         <div class="form-group">
             <div class="col-xs-12 col-md-5 col-lg-5">
-                @Html.LabelFor(m => m.PropertyViewModel.YourPostCode)
+                @Html.LabelFor(m => m.YourPostCode)
                 </div>
             <div class="col-xs-12 col-md-7 col-lg-7">
-                @Html.TextBoxFor(m => m.PropertyViewModel.YourPostCode, new { @class="form-control"})
+                @Html.TextBoxFor(m => m.YourPostCode, new { @class="form-control"})
             </div>
             <div class="clearfix"></div>
         </div>
