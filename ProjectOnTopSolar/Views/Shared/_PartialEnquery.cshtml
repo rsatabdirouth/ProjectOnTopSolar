@@ -1,0 +1,72 @@
+﻿@model ProjectOnTopSolar.ViewModels.SecondIndexViewModel
+
+@{  var titleItems = new List<SelectListItem>
+    {
+    new SelectListItem { Text = "Select.", Value = "1", Selected = true },
+    new SelectListItem { Text = "Mr.", Value = "2", Selected = true },
+    new SelectListItem { Text = "Miss.", Value = "3", Selected = true },
+    new SelectListItem { Text = "Mrs.", Value = "4", Selected = true }};
+    ViewBag.TitleItems = titleItems;
+}
+
+@using (Html.BeginForm("SecondIndex", "Second", FormMethod.Post, new { @id = "homeForm", @novalidate = "" }))
+{
+    <div class="row">
+        <div class="col-md-4">
+            @Html.LabelFor(m => m.EnquieryViewModel.Title)
+            @Html.DropDownListFor(m => m.EnquieryViewModel.Title, ViewBag.TitleItems as List<SelectListItem>, new { @class = "form-control", @style = "padding:5px 1px;" })
+        </div>
+        <div class="col-md-4">
+            @Html.LabelFor(m => m.EnquieryViewModel.FirstName)
+            @Html.TextBoxFor(m => m.EnquieryViewModel.FirstName, new { @class = "form-control" })
+
+        </div>
+        <div class="col-md-4">
+            @Html.LabelFor(m => m.EnquieryViewModel.LastName)
+            @Html.TextBoxFor(m => m.EnquieryViewModel.LastName, new { @class = "form-control" })
+
+        </div>
+
+
+        <div class="col-md-4">
+            @Html.LabelFor(m => m.EnquieryViewModel.Address)
+            @Html.TextBoxFor(m => m.EnquieryViewModel.Address, new { @class = "form-control" })
+        </div>
+        <div class="col-md-4">
+            @Html.LabelFor(m => m.EnquieryViewModel.City)
+            @Html.TextBoxFor(m => m.EnquieryViewModel.City, new { @class="form-control"})
+        </div>
+        <div class="col-md-4">
+            @Html.LabelFor(m => m.EnquieryViewModel.HomePhone)
+            @Html.TextBoxFor(m => m.EnquieryViewModel.HomePhone, new { @class = "form-control" })
+        </div>
+
+
+        <div class="col-xs-12 col-md-4 col-lg-4">
+            @Html.LabelFor(m => m.EnquieryViewModel.WorkPhone)
+            @Html.TextBoxFor(m => m.EnquieryViewModel.WorkPhone, new { @class = "form-control" })
+        </div>
+       
+         <div class="col-xs-12 col-md-4 col-lg-4">
+            @Html.LabelFor(m => m.EnquieryViewModel.Email)
+            @Html.TextBoxFor(m => m.EnquieryViewModel.Email, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="row">
+        <button type="submit" class="btn btn-lg btn-block form-custom-button">
+            Get Free Quote <i class="fa fa-share"></i>
+        </button>
+    </div>
+    <div class="disclaimer">
+        <p>
+            <input checked="checked" data-val="true" data-val-required="The Opt field is required." id="Opt" name="Opt" type="checkbox" value="true" /><input name="Opt" type="hidden" value="false" /> Tick the box to indicate that you
+            agree to let TopSolarQuotes.co.uk and their carefully chosen partners contact
+            you with offers and money saving tips via email, phone and text.
+        </p>
+        <p class="form-disclaimer">
+            By clicking “Get Free Quote” you agree to be contacted by MCS accredited installer
+            to discuss your requirements and confirm that you have read and agreed to our <a style="text-decoration: underline;cursor:pointer;color:#767676;" class="formterms" href="#">Terms &amp; Conditions</a>
+            and <a style="text-decoration: underline;cursor:pointer;color:#767676;" class="formprivacy" href="#">Privacy Policy.</a>
+        </p>
+    </div>
+}

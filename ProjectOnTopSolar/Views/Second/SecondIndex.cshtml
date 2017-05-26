@@ -1,0 +1,50 @@
+﻿<!---layout portion is fetched--->
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!---use the Particular model used in the project---->
+
+@model ProjectOnTopSolar.ViewModels.SecondIndexViewModel
+
+    
+
+<!--fetch property table portion-->
+<div class="container ">
+    <div class="container-fluid top-row no-padding">
+
+        <div class="col-xs-12 col-md-4 col-lg-4 background ">
+            <div class="form-left-area mob-hide">
+
+                @Html.Partial("_PartialProperty", Model)
+                <h4>Complete The From and start saving</h4>
+
+                <div class="col-md-12">
+                    <p>
+                        Receive upto 3 quotes from local solar installers. The quotation service is free and there is no obligation to buy. By comparing quotes from different companies you can save upto 50% on installation costs.
+                    </p>
+                    <p>
+                        <b>Simply complete the short form and get the best solar deal today.</b>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <!---property table end-->
+        <!----fetch the enquery table portion-->
+
+
+        <div class="col-xs-12 col-md-8 col-lg-8 form-right-area">
+            <h4>About You</h4>
+            @Html.Partial("_PartialEnquery", Model)
+
+
+        </div>
+        <div class="clearfix"></div>
+    <div>
+        <div class="col-md-12 well">
+    <h4>Compare solar quotes from</h4>
+    <img src="~/Content/images/formbrand.png" class="img-responsive " />
+            </div>
+</div>
+</div>
+</div>

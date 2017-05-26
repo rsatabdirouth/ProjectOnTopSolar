@@ -1,0 +1,186 @@
+/*filter*/
+.filter
+{
+    background-color: #2daacd; /* background: -webkit-linear-gradient(#7a5986, #b992c7);   background:    -moz-linear-gradient(#7a5986, #b992cf);   background:     -ms-linear-gradient(#7a5986, #b992cf);   background:      -o-linear-gradient(#7a5986, #b992cf);   background:         linear-gradient(#7a5986, #b992cf);   -ms-filter: progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr=#7a5986, endColorstr=#b992cf, GradientType=0);  /* IE 8*/ /*background: url("images/form_bg.jpg") repeat-x scroll 0 0 #B992C7;*/ /*background-image:  -moz-linear-gradient(left, right,from(#7a5986),to(#b992c7));     background-image: -webkit-gradient(linear, left top, left bottom,color-stop(0.00, #7a5986),color-stop(1.00, #b992c7));*/
+    margin: 0px;
+    padding: 5px 5px 10px 5px;
+    float: right;
+    width: 290px;
+    height: 400px;
+}
+
+.filterbox
+{
+    width: 100%;
+}
+.filter .row
+{
+    float: left;
+    margin: -4px 5px 5px 5px;
+    position: relative;
+}
+
+.filter h2
+{
+    font-size: 24px;
+    font-weight: normal;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 18px;
+    text-align: center;
+    color: #fe5e00;
+    background-color: #fbf8eb;
+    width: 298px;
+    margin-left: -5px;
+    border-right: 1px solid #2daacd;
+    border-left: 1px solid #2daacd;
+    margin-top: -4px;
+}
+.filter label
+{
+    float: left;
+    font-weight: bold;
+    color: #fff;
+    font-size: 12px;
+    display: block;
+    margin-top: 12px;
+    width: 120px;
+}
+.filter select, .filter textarea
+{
+    float: left;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #666;
+    font-size: 12px;
+    margin: 5px 0 8px;
+    padding: 4px;
+    width: 160px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+.filter textarea
+{
+    height: 25px;
+}
+.filter input.btn
+{
+    width: auto;
+    border: none;
+    padding: 0;
+    margin-top: 0;
+    margin-left: 39px;
+}
+/*filter*/
+/* end*/
+
+@media only screen and (max-width: 850px)
+{
+    .filter {
+    background-color: #2DAACD;
+    margin: 0px;
+    float: none;
+    height: auto;
+    width: 100%;
+    -moz-box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+    padding: 5px 0px 10px;
+}
+    .filterbox
+{
+    width: 300px;
+height: 400px;
+        margin:0 auto;
+}
+    .filter .row
+    {
+        float: left;
+        margin: -4px 5px 5px 5px;
+        position: relative;
+    }
+
+    .filter h2 {
+    font-size: 24px;
+    font-weight: normal;
+    text-decoration: none;
+    margin-bottom: 18px;
+    text-align: center;
+    color: #FE5E00;
+    background-color: #FBF8EB;
+    width: 100%;
+    border-right: 1px solid #2DAACD;
+    border-left: 1px solid #2DAACD;
+    margin-top: -4px;
+    margin-left: 0px;
+    -moz-box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+}
+    .filter label
+    {
+        float: left;
+        font-weight: bold;
+        color: #fff;
+        font-size: 12px;
+        display: block;
+        margin-top: 12px;
+        width: 120px;
+    }
+    .filter select, .filter textarea
+    {
+        float: left;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        color: #666;
+        font-size: 12px;
+        margin: 5px 0 8px;
+        padding: 4px;
+        width: 160px;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+    }
+    .filter textarea
+    {
+        height: 25px;
+    }
+    .filter input.btn
+    {
+        width: auto;
+        border: none;
+        padding: 0;
+        margin-top: 0;
+        margin-left: 39px;
+    }
+}
+
+@media only screen and (max-width: 240px)
+{
+    .filter
+{
+    float: none;
+margin: 0px auto;
+width: 100%;
+height: auto;
+}
+   .filterbox
+    {
+        width: 200px;
+        height: auto;
+
+        margin: 0 auto;
+    }
+    .filter .row
+    {
+        float: none;
+    margin: -4px 5px 5px 5px;
+    position: relative;
+    }
+    .filter input.btn
+{
+   margin-top: 6px;
+float: none;
+width: 70%;
+margin-left: 16px;
+}
+}
